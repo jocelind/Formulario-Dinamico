@@ -31,7 +31,7 @@ export default function Services() {
     ];
 
     return (
-        <div className="services p-4 mt-5">
+        <div className="services p-4 mt-5" id="services">
             <Container fluid>
                 <Row className="justify-content-md-center">
                     <Col xs={12} md={8}>

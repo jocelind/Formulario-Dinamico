@@ -10,8 +10,7 @@ import {
 }  from "react-bootstrap";
 import Resume from "../Resume";
 
-export default function ThirdStep({setStep}) {
-    const [modal, setModal]= useState(false);
+export default function ThirdStep() {
     const onChangeComment = (e) =>{
         const comment= e.target.value;
         localStorage.setItem("comment", comment);
@@ -36,14 +35,14 @@ export default function ThirdStep({setStep}) {
                         </FloatingLabel>
                     </Col>
                 </Row>
-                <div className="send-form">
+                {/* <div className="send-form">
                     <p className="result p-3" onClick={()=> setModal(true)}>
                         View result 🙌
                     </p>
                 </div>
                 {modal && (
                     <Resume showModal={modal} setModal={setModal} setStep={setStep}/>
-                )}
+                )} */}
             </Container>
         </div>
     );

@@ -8,19 +8,37 @@ export const fruits = [
         id:1,
         icon:"🍅",
         name:"Tomato",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
     },
     {
         id:2,
         icon:"🫐",
         name:"BlueBerries",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
     },
     {
         id:3,
         icon:"🍌",
         name:"Banana",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+    },
+    {
+        id:4,
+        icon:"🥑",
+        name:"Avocado",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+    },
+    {
+        id:5,
+        icon:"🍊",
+        name:"Orange",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+    },
+    {
+        id:6,
+        icon:"🥭",
+        name:"Mango",
+        // description:"Some quick example to build on the card title and make uo the bulk of the card's content",
     },
 ];
 

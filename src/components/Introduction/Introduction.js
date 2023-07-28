@@ -17,7 +17,7 @@ export default function Introduction() {
                             <div className="container-buttons">
                                 <Button
                                     className="p-3"
-                                    onClick={() => console.log("click button1")}
+                                    onClick={() => window.location='#services'}
                                 >Get in touch</Button>
                                 <Button className="p-3">Get in touch</Button>
                             </div>

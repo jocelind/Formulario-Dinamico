@@ -12,7 +12,7 @@ export default function NavBarMenu() {
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
                             Signed in as: {" "}
-                            <a href="https://gmail.com" target="_blank" rel="noreferrer"> Iván Devia</a>
+                            <a href="https://gmail.com" target="_blank" rel="noreferrer">Jocelin Diaz</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>

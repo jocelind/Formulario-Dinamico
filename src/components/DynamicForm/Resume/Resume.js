@@ -1,12 +1,15 @@
 import { Button, CardGroup, Modal } from "react-bootstrap";
 import CardResume from "./CardResume/CardResume";
 import CardResumeHobbies from "./CardResume/CardResumeHobbies";
+import CardResumeMovies from "./CardResume/CardResumeMovies";
 export default function Resume({showModal, setModal, setStep}) {
     const favouriteFruit=localStorage.getItem('fruitName');
     const fruitIcon= localStorage.getItem('iconFruit');
     const hobbiesStorage=JSON.parse(localStorage.getItem('hobbies'));
     const addiotionalHobbie = localStorage.getItem('additionalHobbie');
     const comment = localStorage.getItem('comment');
+    const moviesStorage=JSON.parse(localStorage.getItem('movie'));
+    // const addiotionalmovie = localStorage.getItem('additionalHobbie');
 
     const clearForm = () =>{
         localStorage.clear();
@@ -46,6 +49,13 @@ export default function Resume({showModal, setModal, setStep}) {
                         <CardResume
                             subtitle="And for the last this is the comment"
                             text={comment}
+                        />
+                    )}
+                    {moviesStorage &&(
+                        <CardResumeMovies 
+                            subtitle="Your sports"
+                            // text={addiotionalmovie}
+                            moviesStorage={moviesStorage}
                         />
                     )}
                 </CardGroup>

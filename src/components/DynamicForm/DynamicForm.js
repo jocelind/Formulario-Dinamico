@@ -4,6 +4,9 @@ import "./DynamicForm.css";
 import FirstStep from "./FirstStep/FirstStep";
 import SecondStep from "./SecondStep/SecondStep";
 import ThirdStep from "./ThirdStep/ThirdStep";
+import FourStep from "./FourStep/FourStep";
+
+
 export default function DynamicForm() {
     const [step, setStep] = useState (1);
     const showNextStep = () =>{
@@ -20,18 +23,18 @@ export default function DynamicForm() {
                     <h1 className="title-dynamic-form">
                         Fill the form
                     </h1>
-                    <p className="steps-numbers">Step {step} of 3</p>
+                    <p className="steps-numbers">Step {step} of 4</p>
                     {getPageByStep(step, setStep)}
                     <div className="actions">
                         <div className="container-text">
-                            {step > 1 && step < 4 && (
+                            {step > 1 && step < 5 && (
                                 <p className="before" onClick={showPreviewStep}>
                                     ⬅️ Before Step
                                 </p>
                             )}
                         </div>
                         <div className="container-text">
-                            {step >0 && step < 3 && (
+                            {step >0 && step < 4 && (
                                 <p className="next" onClick={showNextStep}>
                                     Next Step ➡️
                                 </p>
@@ -53,6 +56,9 @@ function getPageByStep(step, setStep){
         return <SecondStep />
     }
     else if (step ===3){
-        return <ThirdStep setStep={setStep} />
+        return <ThirdStep />
+    }
+    else if (step === 4){
+        return <FourStep setStep={setStep} />
     }
 }
